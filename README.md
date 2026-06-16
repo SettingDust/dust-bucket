@@ -1,42 +1,82 @@
-# Scoop Bucket Template
+# dust-bucket
 
-<!-- Uncomment the following line after replacing placeholders -->
-<!-- [![Tests](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/ci.yml) [![Excavator](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml/badge.svg)](https://github.com/<username>/<bucketname>/actions/workflows/excavator.yml) -->
+[![Tests](https://github.com/SettingDust/dust-bucket/actions/workflows/ci.yml/badge.svg)](https://github.com/SettingDust/dust-bucket/actions/workflows/ci.yml) [![Excavator](https://github.com/SettingDust/dust-bucket/actions/workflows/excavator.yml/badge.svg)](https://github.com/SettingDust/dust-bucket/actions/workflows/excavator.yml)
 
-Template bucket for [Scoop](https://scoop.sh), the Windows command-line installer.
+A [Scoop](https://scoop.sh) bucket for CodeNomad Tauri Windows builds.
 
-## How do I use this template?
+## Included manifests
 
-1. Generate your own copy of this repository with the "Use this template"
-   button.
-2. Allow all GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Actions permissions`.
-   - Select `Allow all actions and reusable workflows`.
-   - Then `Save`.
-3. Allow writing to the repository from within GitHub Actions:
-   - Navigate to `Settings` - `Actions` - `General` - `Workflow permissions`.
-   - Select `Read and write permissions`.
-   - Then `Save`.
-4. Document the bucket in `README.md`.
-5. Replace the placeholder repository string in `bin/auto-pr.ps1`.
-6. Create new manifests by copying `bucket/app-name.json.template` to
-   `bucket/<app-name>.json`.
-7. Commit and push changes.
-8. If you'd like your bucket to be indexed on `https://scoop.sh`, add the
-   topic `scoop-bucket` to your repository.
+- `codenomad`: stable CodeNomad Tauri build.
+- `codenomad-nightly`: nightly / prerelease / development CodeNomad Tauri build.
 
-## How do I install these manifests?
+Nightly and prerelease builds may be unstable. Use `codenomad-nightly` only when you want early builds or need to test upcoming changes.
 
-After manifests have been committed and pushed, run the following:
+## Add the buckets
 
 ```pwsh
-scoop bucket add <bucketname> https://github.com/<username>/<bucketname>
-scoop install <bucketname>/<manifestname>
+scoop bucket add dust-bucket https://github.com/SettingDust/dust-bucket
 ```
 
-## How do I contribute new manifests?
+## Install
 
-To make a new manifest contribution, please read the [Contributing
-Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
-and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests)
-wiki page.
+Stable release:
+
+```pwsh
+scoop install dust-bucket/codenomad
+```
+
+Nightly / prerelease release:
+
+```pwsh
+scoop install dust-bucket/codenomad-nightly
+```
+
+## Update
+
+Update Scoop, buckets, and installed apps:
+
+```pwsh
+scoop update
+scoop update codenomad
+```
+
+If you installed the nightly manifest:
+
+```pwsh
+scoop update codenomad-nightly
+```
+
+## Uninstall
+
+```pwsh
+scoop uninstall codenomad
+```
+
+Or, for the nightly manifest:
+
+```pwsh
+scoop uninstall codenomad-nightly
+```
+
+Remove this bucket when you no longer need it:
+
+```pwsh
+scoop bucket rm dust-bucket
+```
+
+## Tests and Excavator
+
+This bucket keeps the standard Scoop bucket automation from the original template:
+
+- **Tests** run through `.github/workflows/ci.yml` on pushes, pull requests, and manual dispatches. The workflow runs `bin/test.ps1` on Windows with both Windows PowerShell and PowerShell Core.
+- **Excavator** runs through `.github/workflows/excavator.yml` on manual dispatch and every four hours. It uses ScoopInstaller's GitHub Actions automation to check manifests for updates and open update changes when needed.
+
+## Contributing
+
+For manifest changes, follow Scoop's [Contributing Guide](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md) and [App Manifests](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) guidance.
+
+Before opening a pull request, run the bucket tests locally from the repository root:
+
+```pwsh
+pwsh ./bin/test.ps1
+```
