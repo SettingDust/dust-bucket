@@ -7,13 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.102.2/LinguaGacha_v0.102.2_Windows_x64.zip",
-            "hash": "be32553d7f953cd425a7e3140ad57e8063546162b8a87218533313fdfee16d1e",
-            "extract_dir": "LinguaGacha"
+            "hash": "be32553d7f953cd425a7e3140ad57e8063546162b8a87218533313fdfee16d1e"
         },
         "arm64": {
             "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.102.2/LinguaGacha_v0.102.2_Windows_arm64.zip",
-            "hash": "f515b0a9b6008bcade0bd79d830026ba2861bb7285e66b3713eca75b4e3d032f",
-            "extract_dir": "LinguaGacha"
+            "hash": "f515b0a9b6008bcade0bd79d830026ba2861bb7285e66b3713eca75b4e3d032f"
         }
     },
     "shortcuts": [
