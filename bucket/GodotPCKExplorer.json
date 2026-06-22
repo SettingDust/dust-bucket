@@ -1,0 +1,30 @@
+{
+    "version": "1.6.0",
+    "description": "Small program for exploring and extracting files from the Godot Engine PCK.",
+    "homepage": "https://github.com/DmitriySalnikov/GodotPCKExplorer",
+    "license": "MIT",
+    "notes": "The UI requires the Microsoft .NET 9 Desktop Runtime.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DmitriySalnikov/GodotPCKExplorer/releases/download/1.6.0/GodotPCKExplorer_1.6.0_dotnet-ui-console-win-linux-mac.zip",
+            "hash": "67ba004ec1478909aa638c335d121fbc8930f90bdbc2b7c3af8650d5083e54db"
+        }
+    },
+    "bin": "GodotPCKExplorer.Console.exe",
+    "shortcuts": [
+        [
+            "GodotPCKExplorer.UI.exe",
+            "GodotPCKExplorer"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/DmitriySalnikov/GodotPCKExplorer"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/DmitriySalnikov/GodotPCKExplorer/releases/download/$version/GodotPCKExplorer_$version_dotnet-ui-console-win-linux-mac.zip"
+            }
+        }
+    }
+}
