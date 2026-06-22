@@ -1,0 +1,26 @@
+{
+    "version": "0.1.0",
+    "description": "CLI for extracting and patching text assets from Godot EXE/PCK files.",
+    "homepage": "https://github.com/SettingDust/godot-text-extractor",
+    "license": "Unknown",
+    "##": "No LICENSE file in upstream repo at release v0.1.0.",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/SettingDust/godot-text-extractor/releases/download/v0.1.0/gte-v0.1.0-windows-amd64.zip",
+            "hash": "85b14f63d302498205b9d7a98fab35bc5ea2b55d1faf1cc8ebd47fbb07099818",
+            "extract_dir": "gte-v0.1.0-windows-amd64"
+        }
+    },
+    "bin": "gte.exe",
+    "checkver": {
+        "github": "https://github.com/SettingDust/godot-text-extractor"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/SettingDust/godot-text-extractor/releases/download/v$version/gte-v$version-windows-amd64.zip",
+                "extract_dir": "gte-v$version-windows-amd64"
+            }
+        }
+    }
+}
