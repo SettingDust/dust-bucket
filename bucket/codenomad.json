@@ -10,10 +10,18 @@
             "hash": "a23d4d38219a8b016705ae325fa5fc6a47ef30b27ce3fe0b9021b18df5d6048f"
         }
     },
-    "bin": "CodeNomad.exe",
+    "extract_dir": "nsis",
+    "installer": {
+        "file": "CodeNomad_0.18.0_x64-setup.exe",
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "bin": "codenomad-tauri.exe",
     "shortcuts": [
         [
-            "CodeNomad.exe",
+            "codenomad-tauri.exe",
             "CodeNomad"
         ]
     ],
