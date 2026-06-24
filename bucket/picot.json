@@ -1,0 +1,36 @@
+{
+    "version": "0.2.1",
+    "description": "Local Codex-style desktop GUI for the Pi coding agent.",
+    "homepage": "https://github.com/shixin-guo/picot",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shixin-guo/picot/releases/download/v0.2.1/Picot_0.2.1_x64-setup.exe",
+            "hash": "176448a57ef8d60e65b07d828ad105c440db3c637502d5062bf1e9ad7d5ab82b"
+        }
+    },
+    "installer": {
+        "file": "Picot_0.2.1_x64-setup.exe",
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "bin": "Picot.exe",
+    "shortcuts": [
+        [
+            "Picot.exe",
+            "Picot"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/shixin-guo/picot"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/shixin-guo/picot/releases/download/v$version/Picot_$version_x64-setup.exe"
+            }
+        }
+    }
+}
