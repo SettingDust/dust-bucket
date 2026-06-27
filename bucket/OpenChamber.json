@@ -5,17 +5,18 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openchamber/openchamber/releases/download/v1.13.4/OpenChamber-1.13.4-win-x64.exe",
+            "url": "https://github.com/openchamber/openchamber/releases/download/v1.13.4/OpenChamber-1.13.4-win-x64.exe#/dl.7z",
             "hash": "fec2e6a17b136972a470059a89ed20741003d7cef4c7823122cf16954649fc9a"
         }
     },
-    "installer": {
-        "file": "OpenChamber-1.13.2-win-x64.exe",
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
-    },
+    "pre_install": [
+        "$payload = Join-Path $dir '$PLUGINSDIR\\app-64.7z'",
+        "if (!(Test-Path $payload)) { throw 'OpenChamber installer payload not found in extracted archive.' }",
+        "7z x \"$payload\" \"-o$dir\" -y | Out-Null",
+        "Remove-Item (Join-Path $dir '$PLUGINSDIR') -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item (Join-Path $dir '$R0') -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item (Join-Path $dir 'uninstallerIcon.ico') -Force -ErrorAction SilentlyContinue"
+    ],
     "bin": "OpenChamber.exe",
     "shortcuts": [
         [
@@ -29,7 +30,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/openchamber/openchamber/releases/download/v$version/OpenChamber-$version-win-x64.exe"
+                "url": "https://github.com/openchamber/openchamber/releases/download/v$version/OpenChamber-$version-win-x64.exe#/dl.7z"
             }
         }
     }

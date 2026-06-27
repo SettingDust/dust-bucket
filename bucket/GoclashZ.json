@@ -5,17 +5,11 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v1.2.0/GoclashZ_win_amd64_Setup.exe",
-            "hash": "95506dfa9a9ffa9d15001099db8eb100b0a9f8dd8c4c210a5593d94ae779862a"
+            "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v1.2.0/GoclashZ_Portable.zip",
+            "hash": "b3e3bc370f2d70c9a4bc22215f98e13154bc9e12def526df784dd9d5ba199c2a"
         }
     },
-    "installer": {
-        "file": "GoclashZ_win_amd64_Setup.exe",
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
-    },
+    "extract_dir": "GoclashZ",
     "bin": "GoclashZ.exe",
     "shortcuts": [
         [
@@ -29,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v$version/GoclashZ_win_amd64_Setup.exe"
+                "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v$version/GoclashZ_Portable.zip"
             }
         }
     }

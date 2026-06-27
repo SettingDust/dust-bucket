@@ -5,16 +5,9 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Juwan-Hwang/Zephyr/releases/download/v2.3.9/Zephyr_2.3.9_x64-setup-full.exe",
-            "hash": "7dc2fd92e8d67bc1a51b4392ad4863c2480154806590068a6e52bae601d409b6"
+            "url": "https://github.com/Juwan-Hwang/Zephyr/releases/download/v2.3.9/Zephyr-windows-portable.zip",
+            "hash": "5ef5a4ac345a93546a4dd29f8e648a3fa2fff99e50288643e162470a431bc862"
         }
-    },
-    "installer": {
-        "file": "Zephyr_2.3.9_x64-setup-full.exe",
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
     },
     "bin": "Zephyr.exe",
     "shortcuts": [
@@ -29,7 +22,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Juwan-Hwang/Zephyr/releases/download/v$version/Zephyr_$version_x64-setup-full.exe"
+                "url": "https://github.com/Juwan-Hwang/Zephyr/releases/download/v$version/Zephyr-windows-portable.zip"
             }
         }
     }

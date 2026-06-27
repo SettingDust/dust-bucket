@@ -11,13 +11,14 @@
         }
     },
     "extract_dir": "nsis",
-    "installer": {
-        "file": "CodeNomad_0.18.0_x64-setup.exe",
-        "args": [
-            "/S",
-            "/D=$dir"
-        ]
-    },
+    "pre_install": [
+        "$installer = Get-ChildItem \"$dir\\nsis\" -Filter '*.exe' | Select-Object -First 1 -ExpandProperty FullName",
+        "if (!$installer) { throw 'CodeNomad installer payload not found in extracted archive.' }",
+        "7z x \"$installer\" \"-o$dir\" -y | Out-Null",
+        "Remove-Item (Join-Path $dir '$PLUGINSDIR') -Recurse -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\uninstall.exe\" -Force -ErrorAction SilentlyContinue",
+        "Remove-Item \"$dir\\nsis\" -Recurse -Force -ErrorAction SilentlyContinue"
+    ],
     "bin": "codenomad-tauri.exe",
     "shortcuts": [
         [
