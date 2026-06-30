@@ -1,12 +1,12 @@
 {
-    "version": "0.4.7",
+    "version": "0.4.9",
     "description": "The desktop app for the pi coding agent.",
     "homepage": "https://github.com/justhil/pi-app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/justhil/pi-app/releases/download/v0.4.7/pi.Desktop-Portable-0.4.7-x64.exe",
-            "hash": "abcb1b4151b07db6e12eb030888e3bf3bc62ba6334b014eeb1c7acde3f918d69"
+            "url": "https://github.com/justhil/pi-app/releases/download/v0.4.9/pi.Desktop-Portable-0.4.9-x64.exe",
+            "hash": "4ddf6afe6b2c54b4458ad31a6e1bad89bdb9d742966c5ba6920ee7c7f257708b"
         }
     },
     "shortcuts": [
