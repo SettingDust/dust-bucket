@@ -5,13 +5,13 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/justhil/pi-app/releases/download/v0.4.11/pi.Desktop-Portable-0.4.11-x64.exe",
+            "url": "https://github.com/justhil/pi-app/releases/download/v0.4.11/pi.Desktop-Portable-0.4.11-x64.exe#/pi-app.exe",
             "hash": "50c5972895b6f80b8fd5b04aaf727d0e429ef330f7edc794c3352c87e06c4ba5"
         }
     },
     "shortcuts": [
         [
-            "pi.Desktop-Portable-0.4.7-x64.exe",
+            "pi-app.exe",
             "pi Desktop"
         ]
     ],
@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/justhil/pi-app/releases/download/v$version/pi.Desktop-Portable-$version-x64.exe"
+                "url": "https://github.com/justhil/pi-app/releases/download/v$version/pi.Desktop-Portable-$version-x64.exe#/pi-app.exe"
             }
         }
     }
