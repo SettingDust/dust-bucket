@@ -1,0 +1,35 @@
+{
+    "version": "0.83.0",
+    "description": "Minimal terminal coding harness running on Bun",
+    "homepage": "https://pi.dev",
+    "license": "MIT",
+    "depends": "bun",
+    "url": [
+        "https://github.com/earendil-works/pi/releases/download/v0.83.0/pi-coding-agent-install-package.json#/package.json",
+        "https://github.com/earendil-works/pi/releases/download/v0.83.0/pi-coding-agent-install-package-lock.json#/package-lock.json"
+    ],
+    "hash": [
+        "41f07a3eb41227905ac436ad41d949e4589dcc34c15454d718f85f399b533cb6",
+        "f5cb41dcfc60561ba54490b49c17beecec202900f73eb5f104b34f8b2a79a0af"
+    ],
+    "installer": {
+        "script": [
+            "$cache = Join-Path $dir '.bun-cache'",
+            "bun install --cwd $dir --cache-dir $cache --backend copyfile --production --ignore-scripts --frozen-lockfile",
+            "$entry = Join-Path $dir 'node_modules\\@earendil-works\\pi-coding-agent\\dist\\cli.js'",
+            "$tui = Join-Path $dir 'node_modules\\@earendil-works\\pi-tui\\dist\\index.js'",
+            "if (!(Test-Path $entry -PathType Leaf) -or !(Test-Path $tui -PathType Leaf)) { throw 'Pi runtime files were not installed' }",
+            "Set-Content $dir\\pi.cmd '@echo off', 'bun \"%~dp0node_modules\\@earendil-works\\pi-coding-agent\\dist\\cli.js\" %*'"
+        ]
+    },
+    "bin": "pi.cmd",
+    "checkver": {
+        "github": "https://github.com/earendil-works/pi"
+    },
+    "autoupdate": {
+        "url": [
+            "https://github.com/earendil-works/pi/releases/download/v$version/pi-coding-agent-install-package.json#/package.json",
+            "https://github.com/earendil-works/pi/releases/download/v$version/pi-coding-agent-install-package-lock.json#/package-lock.json"
+        ]
+    }
+}
