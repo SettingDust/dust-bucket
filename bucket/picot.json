@@ -1,12 +1,12 @@
 {
-    "version": "0.5.0",
+    "version": "0.5.1",
     "description": "Local Codex-style desktop GUI for the Pi coding agent.",
     "homepage": "https://github.com/shixin-guo/picot",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/shixin-guo/picot/releases/download/v0.5.0/Picot_0.5.0_x64-setup.exe#/dl.7z",
-            "hash": "52d625ccdaa738c61a7889319c70bc58efe034f330af3f8be68230caaa7cac0d"
+            "url": "https://github.com/shixin-guo/picot/releases/download/v0.5.1/Picot_0.5.1_x64-setup.exe#/dl.7z",
+            "hash": "af919ee73f1978e6ca88867409b5d844770d5ef19c2db478c519554edd5c4182"
         }
     },
     "pre_install": "Remove-Item (Join-Path $dir '$PLUGINSDIR') -Recurse -Force -ErrorAction SilentlyContinue",
