@@ -16,10 +16,10 @@
         "script": [
             "$cache = Join-Path $dir '.bun-cache'",
             "bun install --cwd $dir --cache-dir $cache --backend copyfile --production --ignore-scripts --frozen-lockfile",
-            "$entry = Join-Path $dir 'node_modules\\@earendil-works\\pi-coding-agent\\dist\\cli.js'",
+            "$entry = Join-Path $dir 'node_modules\\@earendil-works\\pi-coding-agent\\dist\\bundle\\cli.js'",
             "$tui = Join-Path $dir 'node_modules\\@earendil-works\\pi-tui\\dist\\index.js'",
             "if (!(Test-Path $entry -PathType Leaf) -or !(Test-Path $tui -PathType Leaf)) { throw 'Pi runtime files were not installed' }",
-            "Set-Content $dir\\pi.cmd '@echo off', 'bun \"%~dp0node_modules\\@earendil-works\\pi-coding-agent\\dist\\cli.js\" %*'"
+            "Set-Content $dir\\pi.cmd '@echo off', 'bun \"%~dp0node_modules\\@earendil-works\\pi-coding-agent\\dist\\bundle\\cli.js\" %*'"
         ]
     },
     "bin": "pi.cmd",
