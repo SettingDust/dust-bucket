@@ -1,0 +1,28 @@
+{
+    "version": "0.14.6",
+    "description": "Local-first desktop workspace for AI coding agents.",
+    "homepage": "https://github.com/vastsa/PI-Desktop",
+    "license": "LGPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/vastsa/PI-Desktop/releases/download/v0.14.6/PI-Desktop-Portable-0.14.6.exe#/PI-Desktop.exe",
+            "hash": "8254588982f5edcbc0741a7170844ec75a7a47282fa0eb4edaf91482a49cab13"
+        }
+    },
+    "shortcuts": [
+        [
+            "PI-Desktop.exe",
+            "PI-Desktop"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/vastsa/PI-Desktop"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/vastsa/PI-Desktop/releases/download/v$version/PI-Desktop-Portable-$version.exe#/PI-Desktop.exe"
+            }
+        }
+    }
+}
