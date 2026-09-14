@@ -1,17 +1,17 @@
 {
-    "version": "0.120.1",
+    "version": "0.121.0",
     "description": "An AI-powered next-generation translator for novels, games, and subtitles.",
     "homepage": "https://github.com/neavo/LinguaGacha",
     "license": "Freeware",
     "##": "No LICENSE file in upstream repo; classified as Freeware per author's usage terms in README.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.120.1/LinguaGacha_v0.120.1_Windows_x64.zip",
-            "hash": "75b0ceb46ef54d225b0e63f88a46922aa5ac71822b4dcee99d59d1a9a91cbf5a"
+            "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.121.0/LinguaGacha_v0.121.0_Windows_x64.zip",
+            "hash": "847b1d90d73be05d8c20bec7c29e945c27ef35bd6210ed076e52d8af3cee7441"
         },
         "arm64": {
-            "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.120.1/LinguaGacha_v0.120.1_Windows_arm64.zip",
-            "hash": "20fb944ea3a7bc972e78fddbf0a5f7047612cf419558290f9f6edd22db52b971"
+            "url": "https://github.com/neavo/LinguaGacha/releases/download/MANUAL_BUILD_v0.121.0/LinguaGacha_v0.121.0_Windows_arm64.zip",
+            "hash": "d2e3ed10e1f4b560b8beb85d633ecac478e9b8dbac58174c622668e9f02f09be"
         }
     },
     "shortcuts": [
