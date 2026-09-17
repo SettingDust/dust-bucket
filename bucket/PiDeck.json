@@ -1,12 +1,12 @@
 {
-    "version": "0.7.5",
+    "version": "0.7.6",
     "description": "Open-source desktop workbench for managing pi coding agent sessions across local projects.",
     "homepage": "https://github.com/ayuayue/PiDeck",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ayuayue/PiDeck/releases/download/v0.7.5/PiDeck-0.7.5-win.zip",
-            "hash": "77e26296ec22dff31752d38c24ee190d22e84f0ecce13be71108700b936164d6"
+            "url": "https://github.com/ayuayue/PiDeck/releases/download/v0.7.6/PiDeck-0.7.6-win.zip",
+            "hash": "ac60c95f64bf6530df99994c153ce509d3e2b3f9680871c03efaf8336017ae0f"
         }
     },
     "bin": "PiDeck.exe",
