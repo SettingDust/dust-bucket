@@ -1,13 +1,13 @@
 {
-    "version": "0.20.0-dev-20260921-f3834dd2",
+    "version": "0.20.0-dev-20260922-e68ac524",
     "description": "Prerelease build of the command center that puts AI coding on steroids.",
     "homepage": "https://github.com/NeuralNomadsAI/CodeNomad",
     "license": "MIT",
     "depends": "opencode",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.20.0-dev-20260921-f3834dd2/CodeNomad-Tauri-windows-x64-0.20.0-dev-20260921-f3834dd2.zip",
-            "hash": "367834407151d117739fbfc4d3959d6b37a8c99ef368534911280d4de8849cf3"
+            "url": "https://github.com/NeuralNomadsAI/CodeNomad/releases/download/v0.20.0-dev-20260922-e68ac524/CodeNomad-Tauri-windows-x64-0.20.0-dev-20260922-e68ac524.zip",
+            "hash": "3123b49ab1f29cd6440098c692057523e548d379f1e4109ca195722bb4465921"
         }
     },
     "extract_dir": "nsis",
