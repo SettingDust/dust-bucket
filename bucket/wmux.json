@@ -1,12 +1,12 @@
 {
-    "version": "4.3.1",
+    "version": "4.4.0",
     "description": "Workspace multiplexer for AI coding agent",
     "homepage": "https://github.com/openwong2kim/wmux",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/openwong2kim/wmux/releases/download/v4.3.1/wmux-4.3.1-full.nupkg#/dl.7z",
-            "hash": "b8350b73b21d84c99ad0bb306835e744317c4c5638a369ed58d2fc4a052326db"
+            "url": "https://github.com/openwong2kim/wmux/releases/download/v4.4.0/wmux-4.4.0-full.nupkg#/dl.7z",
+            "hash": "cb8f65f13155f37a20ddb706f0d43b1e492d220574a42f3f0f255e859073244e"
         }
     },
     "extract_dir": "lib\\net45",
