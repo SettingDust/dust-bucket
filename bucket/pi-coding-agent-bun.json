@@ -1,16 +1,16 @@
 {
-    "version": "1.4.0",
+    "version": "1.5.0",
     "description": "Minimal terminal coding harness running on Bun",
     "homepage": "https://pi.dev",
     "license": "MIT",
     "depends": "bun",
     "url": [
-        "https://github.com/earendil-works/pi/releases/download/v1.4.0/pi-coding-agent-install-package.json#/package.json",
-        "https://github.com/earendil-works/pi/releases/download/v1.4.0/pi-coding-agent-install-package-lock.json#/package-lock.json"
+        "https://github.com/earendil-works/pi/releases/download/v1.5.0/pi-coding-agent-install-package.json#/package.json",
+        "https://github.com/earendil-works/pi/releases/download/v1.5.0/pi-coding-agent-install-package-lock.json#/package-lock.json"
     ],
     "hash": [
-        "9792b34aba5a94320fde5c68600eac4a5720d0d63ebc527d462bd125665b29ee",
-        "eb2c76ac270f099f2af3cbc6ccd08c3d22bf562b914af3690d1abba985461ade"
+        "2c0524e9556a475c087ea43c5b4ef6af232b180dfac5724a33dfe3e309349472",
+        "d3d2abb9ed4e078b7978ecd0f6316cc4357cb8d7777d344020acfa23190e24b4"
     ],
     "installer": {
         "script": [
