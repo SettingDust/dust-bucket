@@ -1,10 +1,10 @@
 {
-    "version": "1.3.9",
+    "version": "1.3.10",
     "description": "Transparent per-process proxy for Windows using user-mode hooks, without TUN or kernel drivers.",
     "homepage": "https://github.com/threatexpert/ProxyLane",
     "license": "MIT",
-    "url": "https://github.com/threatexpert/ProxyLane/releases/download/v1.3.9/ProxyLane-1.3.9-Windows.zip",
-    "hash": "54c3146863d10f9622278d55e6dcdf0e6647a8f880edcdc2160afbd6bd7c0ceb",
+    "url": "https://github.com/threatexpert/ProxyLane/releases/download/v1.3.10/ProxyLane-1.3.10-Windows.zip",
+    "hash": "03a84bc8b82809280737504edb7bc00f0103db429e5580c021e5389d3febd221",
     "architecture": {
         "64bit": {
             "bin": [
