@@ -1,12 +1,12 @@
 {
-    "version": "1.4.0",
+    "version": "2.0.0",
     "description": "A Wails-based Mihomo (Clash Meta) desktop controller for Windows.",
     "homepage": "https://github.com/Zzz-IT/GoclashZ",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v1.4.0/GoclashZ_Portable.zip",
-            "hash": "0376bb18bb4032126de0bc41f5cc06e60aae5c42714219c8b0b2fcbc44d99e03"
+            "url": "https://github.com/Zzz-IT/GoclashZ/releases/download/v2.0.0/GoclashZ_Portable.zip",
+            "hash": "d287473212bc2c2737e795a21df16be610bf6dd360d2e58101119083dc8fdaef"
         }
     },
     "extract_dir": "GoclashZ",
